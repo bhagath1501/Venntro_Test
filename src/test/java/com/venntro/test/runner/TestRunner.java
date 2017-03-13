@@ -7,7 +7,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "src/tes/resources",
+		features = "src/test/resources",
 		glue = {"com/venntro/test/stepdefinitions"},
 		plugin = {"html:target/cucumber-hrml-reports",
 				  "json:target/cucumber.json"})
