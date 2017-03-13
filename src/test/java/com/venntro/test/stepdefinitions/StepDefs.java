@@ -27,8 +27,12 @@ public class StepDefs {
 	}
 
 	@When("^I click on \"([^\"]*)\"$")
-	public void I_click_on(String property) {
+	public void I_click_on(String property) throws InterruptedException {
 		cucumber.click(property);
+		Thread.sleep(3000); // all feature files sharing only one step
+							// definition
+							// file here, so i am using Thread.sleep() instead
+							// of implicit wait
 	}
 
 	@Then("^Check the \"([^\"]*)\" with \"([^\"]*)\"$")
