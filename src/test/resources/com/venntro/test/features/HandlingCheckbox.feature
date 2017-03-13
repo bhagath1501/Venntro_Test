@@ -4,6 +4,7 @@ Feature: To handle the checkbox under dynamic controls
   As a Tester
   I want to test the checkbox under dynamic controls
 
+  @checkbox
   Scenario Outline: verifying the remove functionality of the checkbox
     Given I open "<browser>"
     When I navigate "dynamic_control_url"
@@ -15,6 +16,7 @@ Feature: To handle the checkbox under dynamic controls
       | browser | ActualResult   | ExpectedResult |
       | Chrome  | SuccessMessage | It's gone!     |
 
+  @checkbox
   Scenario Outline: verifying the add functionality of the checkbox
     Given I open "<browser>"
     When I navigate "dynamic_control_url"

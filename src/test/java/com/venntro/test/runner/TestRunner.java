@@ -10,7 +10,8 @@ import cucumber.api.junit.Cucumber;
 		features = "src/test/resources",
 		glue = {"com/venntro/test/stepdefinitions"},
 		plugin = {"html:target/cucumber-hrml-reports",
-				  "json:target/cucumber.json"})
+				  "json:target/cucumber.json"},
+		tags = {"@dynamicElements,@email,@checkbox,@login"})
 public class TestRunner {
 	
 }
